@@ -1,8 +1,8 @@
-#Network policy to ALLOW traffic TO productcatlogservice FROM frontend on PORT 3550
+#Network policy to ALLOW traffic TO productcatalogservice FROM frontend on PORT 3550
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
-  name: productcatlogservice-allow-frontend
+  name: productcatalogservice-allow-frontend
 spec:
   podSelector:
     matchLabels:
@@ -16,7 +16,7 @@ spec:
       - port: 3550
 
 ---
-#Network policy to ALLOW traffic TO productcatlogservice FROM recommendationservice on PORT 3550
+#Network policy to ALLOW traffic TO productcatalogservice FROM recommendationservice on PORT 3550
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
@@ -34,7 +34,7 @@ spec:
       - port: 3550
 
 ---
-#Network policy to ALLOW traffic TO productcatlogservice FROM checkoutservice on PORT 3550
+#Network policy to ALLOW traffic TO productcatalogservice FROM checkoutservice on PORT 3550
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
